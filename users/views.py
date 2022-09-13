@@ -1,3 +1,4 @@
+from multiprocessing import context
 from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
 from rest_framework.response import Response
@@ -10,7 +11,12 @@ from users.serializers import InfoSerializer
 
 def index(request):
     # Info.objects.create(name='John', age=20)
-    return render(request, 'index.html')
+    context = {
+        'title': [0]*9,
+        'info': Info.objects.all()
+    }
+    # return render(request, 'users/index.html', context)
+    return render(request, 'index.html', context)
 
 
 @api_view(['GET', 'POST'])

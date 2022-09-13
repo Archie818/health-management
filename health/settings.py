@@ -84,7 +84,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',  # 数据库引擎
         'NAME': 'health',  # 数据库名称
         'USER': 'root',  # 链接数据库的用户名
-        'PASSWORD': '55555',  # 链接数据库的密码
+        'PASSWORD': 'yy8217875.',  # 链接数据库的密码
         'HOST': 'localhost',  # mysql服务器的域名和ip地址
         'PORT': '3306',  # mysql的一个端口号,默认是3306
     }
