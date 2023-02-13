@@ -22,21 +22,6 @@ class Info(models.Model):
         unique_together = ['name', 'gender', 'age']
 
 
-# class Class(models.Model):
-#     subject = models.CharField(max_length=255)
-#     last_updated = models.DateTimeField(auto_now_add=True)
-#     info = models.ForeignKey(Info, related_name='class')
-#     starter = models.ForeignKey(User, related_name='class')
-
-# class Post(models.Model):
-#     message = models.TextField(max_length=4000)
-#     topic = models.ForeignKey(Topic, related_name='posts')
-#     created_at = models.DateTimeField(auto_now_add=True)
-#     updated_at = models.DateTimeField(null=True)
-#     created_by = models.ForeignKey(User, related_name='posts')
-#     updated_by = models.ForeignKey(User, null=True, related_name='+')
-
-
 # creat email field
 class Email(models.Model):
     subject = models.CharField(max_length=255)

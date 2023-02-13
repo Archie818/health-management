@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'users',
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -66,6 +67,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'libraries':{
+            'watch_embed': 'users.templatetags.change_link',
+            }
         },
     },
 ]
@@ -76,17 +80,9 @@ WSGI_APPLICATION = 'health.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
     'default': {
-        'ENGINE': 'django.db.backends.mysql',  # 数据库引擎
-        'NAME': 'health',  # 数据库名称
-        'USER': 'root',  # 链接数据库的用户名
-        'PASSWORD': 'yy8217875.',  # 链接数据库的密码
-        'HOST': 'localhost',  # mysql服务器的域名和ip地址
-        'PORT': '3306',  # mysql的一个端口号,默认是3306
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 

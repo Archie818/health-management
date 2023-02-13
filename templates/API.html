@@ -1,0 +1,26 @@
+{% load static %}
+
+<div class="container text-center">
+	<h1>Use the api get instructional videos</h1>
+	<p>
+		Send GET or POST data to http://127.0.0.1:8000/api/getvideo. The format of the data is json data.<br>
+		The sample json format sent is:<br>
+		<code>
+			{
+				"gender": "Male",
+				"age": 20,
+				"height": 170,
+				"weight": 60,
+			}
+		</code>
+		<br>
+		The value of the gender field needs to be male or female and is not case-sensitive.<br>
+		The value of the age field needs to be an integer.<br>
+		The value of the height field needs to be an integer and unit is cm.<br>
+		The value of the weight field needs to be an integer and unit is cm.<br>
+	</p>
+	<h5>If you would like to send and receive data through the page, please click on the button below to jump.</h5>
+	<a href="{% url 'api_get_video' %}" target="_blank" class="btn btn-secondary text-capitalize">
+        Debugging API
+	</a>
+</div>
