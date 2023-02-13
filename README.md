@@ -1,11 +1,11 @@
 # health-management
+
 ### Introduction
 
 This is a Django project.
-Create a training recommend website that automatically recommends  training recommendations based on the user's profile. This is a customised website where the user gets the information that is best for them.
-Users register by entering basic information such as gender, age, height and weight. The website gives health and training recommendations based on the information entered by the user. 
+Create a training recommend website that automatically recommends training recommendations based on the user's profile. This is a customised website where the user gets the information that is best for them.
+Users register by entering basic information such as gender, age, height and weight. The website gives health and training recommendations based on the information entered by the user.
 The website also has an open API interface to send customized training videos to developers in real time.
-
 
 ### Getting Started
 
@@ -60,8 +60,8 @@ python manage.py runserver
 
 This Django project follows the recommended project structure, with the following main components:
 
-bandersnatch-django/ - the root directory of the project
-bandersnatch-django/bandersnatch/ - contains the main application code
-bandersnatch-django/api/ - contains the project api part code
-bandersnatch-django/customer/ - contains the project customer part code
-bandersnatch-django/manage.py - the Django command-line utility
+health-management/ - the root directory of the project
+health-management/health/ - contains the main application code
+health-management/api/ - contains the project api part code
+health-management/user/ - contains the project user part code
+health-management/manage.py - the Django command-line utility
