@@ -60,8 +60,8 @@ python manage.py runserver
 
 This Django project follows the recommended project structure, with the following main components:
 
-health-management/ - the root directory of the project
-health-management/health/ - contains the main application code
-health-management/api/ - contains the project api part code
-health-management/user/ - contains the project user part code
+health-management/ - the root directory of the project\
+health-management/health/ - contains the main application code\
+health-management/api/ - contains the project api part code\
+health-management/user/ - contains the project user part code\
 health-management/manage.py - the Django command-line utility
