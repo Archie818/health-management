@@ -4,5 +4,6 @@ venv/
 env/
 mvpenv/
 SEEnv/
+migrations/
 .vscode/
 .idea/
